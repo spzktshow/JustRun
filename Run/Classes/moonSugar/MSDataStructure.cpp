@@ -106,14 +106,21 @@ int Stack::addItem(moonsugar::QueueItem *itemValue)
 
 moonsugar::QueueItem * Stack::popItem()
 {
-    return checkNext();
-}
-
-moonsugar::QueueItem * Stack::checkNext()
-{
     if (queueList->count() <= 0) return nullptr;
     QueueItem * tempItem = (QueueItem *)queueList->getObjectAtIndex(0);
     queueList->removeObjectAtIndex(0);
     return tempItem;
+}
+
+moonsugar::QueueItem * Stack::getCurrentItem()
+{
+    if (checkNext() == false) return nullptr;
+    return (QueueItem *)queueList->getObjectAtIndex(0);
+}
+
+bool Stack::checkNext()
+{
+    if (queueList->count() <= 0) return false;
+    return true;
 }
 NS_MS_END;

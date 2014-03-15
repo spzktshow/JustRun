@@ -26,6 +26,26 @@ StateContext::~StateContext()
     delete stateList;
 }
 
+void StateContext::insertStateData(moonsugar::StateData *stateData)
+{
+    stateList->addItem(stateData);
+    currentState = stateData;
+}
+
+void StateContext::popStateDataChangeNext()
+{
+    stateList->popItem();
+    if (stateList->checkNext()) {
+        currentState = (moonsugar::StateData *)stateList->getCurrentItem();
+    }
+}
+
+void StateContext::cancelStateDataChange(moonsugar::StateData *stateData)
+{
+    stateList->popItem();
+    insertStateData(stateData);
+}
+
 /************Behavior Event*************/
 BehaviorEvent::BehaviorEvent(std::string behaviorEventType)
 {
@@ -41,6 +61,7 @@ BehaviorEvent::~BehaviorEvent()
 Actor::Actor()
 {
     dispatcher = cocos2d::Director::getInstance()->getEventDispatcher();
+    stateContext = new moonsugar::StateContext();
 }
 
 Actor::~Actor()

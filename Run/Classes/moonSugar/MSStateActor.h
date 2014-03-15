@@ -35,6 +35,15 @@ public:
     
     StateContext();
     ~StateContext();
+    
+    /***插入状态数据***/
+    void insertStateData(moonsugar::StateData * stateData);
+    
+    /***弹出当前状态，转换成栈内下一个状态***/
+    void popStateDataChangeNext();
+    
+    /***cancel出当前状态，转换成参数的状态***/
+    void cancelStateDataChange(moonsugar::StateData * stateData);
 };
 
 //==========Behavior Event============/

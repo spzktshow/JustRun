@@ -68,11 +68,14 @@ public:
     /***向队列中添加item，item的索引值为0**/
     virtual int addItem(moonsugar::QueueItem * itemValue);
     
-    /***弹出item，栈特有的获取item的方式，直接从0索引处返回item**/
+    /***弹出item，栈特有的获取item的方式，直接从0索引处删除并返回item**/
     virtual moonsugar::QueueItem * popItem();
     
+    /***获取当前item，从0索引处返回item*****/
+    virtual moonsugar::QueueItem * getCurrentItem();
+    
     /***检测下一个item**/
-    virtual moonsugar::QueueItem * checkNext();
+    virtual bool checkNext();
 };
 /**********************************************/
 NS_MS_END;

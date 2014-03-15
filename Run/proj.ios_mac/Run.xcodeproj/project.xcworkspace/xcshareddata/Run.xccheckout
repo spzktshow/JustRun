@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>32E8FC89-E586-4B55-83D8-D1B4A212091D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Run</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F9F02377-E5FF-4DA0-A6A7-7B1EC6058C99</key>
+		<string>https://github.com/spzktshow/JustRun.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Run/proj.ios_mac/Run.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F9F02377-E5FF-4DA0-A6A7-7B1EC6058C99</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/spzktshow/JustRun.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F9F02377-E5FF-4DA0-A6A7-7B1EC6058C99</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F9F02377-E5FF-4DA0-A6A7-7B1EC6058C99</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JustRun</string>
+		</dict>
+	</array>
+</dict>
+</plist>
